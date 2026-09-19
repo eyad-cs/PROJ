@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A University of Tabuk graduation project exploring AI-assisted visible car damage assessment and spare-parts search and price comparison." />
+  <title>CarPart AI | Graduation Project</title>
+  <style>
+    :root { color-scheme: dark; --bg:#08111f; --panel:#111f32; --border:#27405a; --text:#ecf6ff; --muted:#b2c5d9; --accent:#68e1d0; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif; line-height:1.65; background:var(--bg); color:var(--text); }
+    a { color:inherit; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+    .container { width:min(1100px, calc(100% - 40px)); margin-inline:auto; }
+    header { border-bottom:1px solid var(--border); }
+    .topbar { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:17px 0; }
+    .brand { font-weight:800; letter-spacing:.02em; font-size:1.2rem; text-decoration:none; }
+    .brand span { color:var(--accent); }
+    nav { display:flex; flex-wrap:wrap; gap:18px; font-size:.93rem; }
+    nav a { text-decoration:none; color:var(--muted); }
+    nav a:hover { color:var(--accent); }
+    .hero { padding:88px 0 75px; background: radial-gradient(ellipse at 80% 10%, #123d52 0%, transparent 49%); }
+    .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.13em; font-size:.8rem; font-weight:750; }
+    h1 { font-size:clamp(2.15rem, 6vw, 4rem); max-width:830px; line-height:1.14; letter-spacing:-.035em; margin:17px 0 23px; }
+    .lead { color:var(--muted); font-size:1.13rem; max-width:735px; margin:0 0 26px; }
+    .status { display:inline-flex; align-items:center; gap:9px; border:1px solid #3b736e; border-radius:999px; padding:7px 13px; color:#cbfff6; background:#10302f; font-size:.85rem; }
+    .dot { height:8px; width:8px; background:var(--accent); border-radius:50%; }
+    section { padding:58px 0; }
+    h2 { font-size:clamp(1.55rem, 3.5vw, 2.15rem); margin:0 0 12px; line-height:1.3; }
+    .intro { color:var(--muted); max-width:750px; margin:0 0 27px; }
+    .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:17px; }
+    .card { background:var(--panel); border:1px solid var(--border); border-radius:17px; padding:23px; }
+    .number { font-size:.8rem; font-weight:800; color:var(--accent); letter-spacing:.08em; }
+    h3 { font-size:1.08rem; margin:8px 0; }
+    .card p, .notice p { color:var(--muted); margin:0; }
+    .notice { border:1px solid var(--border); border-left:4px solid var(--accent); border-radius:12px; padding:22px; background:#102036; }
+    .notice strong { display:block; margin-bottom:6px; }
+    footer { border-top:1px solid var(--border); color:var(--muted); font-size:.87rem; padding:24px 0 38px; }
+    @media (max-width:720px) { .cards { grid-template-columns:1fr; } .topbar { align-items:flex-start; flex-direction:column; gap:7px; } .hero { padding:60px 0; } section { padding:43px 0; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <a class="brand" href="#home">CarPart <span>AI</span></a>
+      <nav aria-label="Main navigation"><a href="#about">About</a><a href="#features">Planned features</a><a href="#status">Project status</a></nav>
+    </div>
+  </header>
+  <main id="home">
+    <div class="hero"><div class="container">
+      <div class="eyebrow">University graduation project</div>
+      <h1>AI-assisted car damage assessment and spare-parts search</h1>
+      <p class="lead">We are developing a tool to help drivers understand visible car damage, look for replacement parts, and compare product offers in one place.</p>
+      <div class="status"><span class="dot" aria-hidden="true"></span>Under development — informational project page</div>
+    </div></div>
+    <section id="about"><div class="container">
+      <h2>About the project</h2>
+      <p class="intro">Finding suitable replacement parts can take time. Our planned system uses photos and vehicle details, such as make, model, and year, to support a preliminary assessment and a more focused parts search. It is not a professional vehicle inspection or a guarantee of part compatibility.</p>
+    </div></section>
+    <section id="features"><div class="container">
+      <h2>Planned features</h2>
+      <p class="intro">These features describe our project proposal. They are not available on this website yet.</p>
+      <div class="cards">
+        <article class="card"><div class="number">01 / ASSESS</div><h3>Visible damage analysis</h3><p>Analyze uploaded photos to estimate visible damage severity and identify affected exterior parts.</p></article>
+        <article class="card"><div class="number">02 / SEARCH</div><h3>Spare-parts search</h3><p>Use vehicle information and part names to look for potential replacement products through authorized marketplace APIs, where access is available.</p></article>
+        <article class="card"><div class="number">03 / COMPARE</div><h3>Offers and chat assistant</h3><p>Compare listed prices, product condition, and shipping information where provided. A planned chatbot will let users search without uploading a photo.</p></article>
+      </div>
+    </div></section>
+    <section id="status"><div class="container">
+      <div class="notice"><strong>Current status: Planning and development</strong><p>This is a public information page for a Computer Science graduation project at the University of Tabuk. Product searches, image analysis, and shopping features are not live. Any future marketplace integration depends on official API access and available data. We are not affiliated with or endorsed by any marketplace.</p></div>
+    </div></section>
+  </main>
+  <footer><div class="container">CarPart AI · Student graduation project · University of Tabuk</div></footer>
+</body>
+</html>
